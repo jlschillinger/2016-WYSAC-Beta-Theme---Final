@@ -28,7 +28,7 @@ get_header(); ?>
 								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('recent-post-box', array('class'=>'img-responsive')); ?></a>
 							</div><!--.col-md-6-->
 							<div class="col-md-6 col-sm-6">
-								<p class="entry-metadata"><?php the_time('Y')?> <?php the_terms( $post->ID, 'project_type', ' |  ', '' ); ?></p>
+								<p class="entry-metadata"><?php the_time('Y')?> <?php the_terms( $post->ID, 'project_type', ' |  ', ', ' ); ?></p>
 								<a href="<?php the_permalink();?>" class="entry-title-link"><h2><?php the_title(); ?></h2></a>
 								<?php
 								//Change the Read More link based on the category archive

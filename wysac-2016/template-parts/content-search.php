@@ -16,7 +16,7 @@
 		</div><!--.col-md-6-->
 		<div class="col-md-6">
 				<?php if ( 'post' === get_post_type() ): ?>
-						<p class="entry-metadata"><?php the_time('m.d.Y')?><?php the_terms( $post->ID, 'project_type', ' |  ', '' ); ?></p>
+						<p class="entry-metadata"><?php the_time('Y')?><?php the_terms( $post->ID, 'project_type', ' |  ', '' ); ?></p>
 					<?php endif; ?>
 					<?php the_title( sprintf( '<h2><a href="%s" rel="bookmark" class="entry-title-link">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 					<a href="<?php the_permalink(); ?>" class="read-more-link">View Project &rarr;</a>

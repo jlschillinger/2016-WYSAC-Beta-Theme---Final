@@ -27,7 +27,7 @@
 			<?php
 			if ( is_single() && 'post' === get_post_type() ) {?>
 				<div class="entry-meta">
-					<p class="entry-metadata"><?php the_time('m.d.Y')?><?php the_terms( $post->ID, 'project_type', ' |  ', '' ); ?></p>
+					<p class="entry-metadata"><?php the_time('Y')?><?php the_terms( $post->ID, 'project_type', ' |  ', '' ); ?></p>
 				</div><!--entry-meta-->
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 				<?php

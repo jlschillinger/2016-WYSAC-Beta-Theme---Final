@@ -27,7 +27,7 @@ get_header(); ?>
 								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('recent-post-box', array('class'=>'img-responsive')); ?></a>
 							</div><!--col-md-6-->
 							<div class="col-md-6 col-sm-6">
-								<p class="entry-metadata"><?php the_time('m.d.Y')?><?php the_terms( $post->ID, 'project_type', ' |  ', '' ); ?></p>
+								<p class="entry-metadata"><?php the_time('Y')?><?php the_terms( $post->ID, 'project_type', ' |  ', '' ); ?></p>
 								<h2><a href="<?php the_permalink(); ?>" class="entry-title-link"><?php the_title(); ?></a></h2>
 								<a href="<?php the_permalink(); ?>" class="read-more-link">Read More &rarr;</a>
 

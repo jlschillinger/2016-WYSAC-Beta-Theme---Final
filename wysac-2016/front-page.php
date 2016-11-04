@@ -34,7 +34,7 @@ get_header('home'); ?>
 					while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 					<div class="ms-item col-md-4 col-sm-6">
 						<div class="recent-post-box">
-							<p class="entry-metadata"><?php the_time('m.d.Y')?><?php the_terms( $post->ID, 'project_type', ' |  ', ', ' ); ?></p>
+							<p class="entry-metadata"><?php the_time('Y')?><?php the_terms( $post->ID, 'project_type', ' |  ', ', ' ); ?></p>
 							<p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('recent-post-box', array('class'=>'img-responsive')); ?></a></p>
 							<h2><a href="<?php the_permalink(); ?>" class="entry-title-link"><?php the_title(); ?></a></h2>
 							<p><a href="<?php the_permalink(); ?>" class="read-more-link">View Project &rarr;</a></p>
